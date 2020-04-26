@@ -11,7 +11,7 @@
 @import './_current_suntimes';
 @import './_forecast_next_days';
 @import './_error_message';
-
+@import './spinner';
 
 // add Bootstrap and override before import default body-bg color
 $body-bg: $main-bg;

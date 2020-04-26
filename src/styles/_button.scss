@@ -1,10 +1,9 @@
+
 .btn-action {
   margin: 0 auto;
   .btn-primary {
-    margin-top:0.125rem;
     font-weight: 500;
     font-size: 0.8em;
-    border-radius: 4px;
     padding: 0.35rem 1.2rem;
     border-style: none;
     box-shadow: 1px 1px 8px  rgba(0, 0, 0, 0.2);
@@ -13,25 +12,37 @@
 }
 
 .btn-primary.search  {
+ margin-top:0.125rem;
  padding: 0.38rem 1rem;
  border-top-right-radius: 1.75rem;
  border-bottom-right-radius: 1.75rem;
  border-color: none !important;
  outline: none !important;
  box-shadow: none !important;
+ // @mixin media queries
+ @include for-tablet {
+   padding: 0.38rem 1.5rem;
+ }
+ @include for-laptop {
+   padding: 0.38rem 2rem;
+ }
 }
 
 .btn-primary.go-back {
-  margin-top: 16px;
-  padding: 0.38rem 5rem;
-
+  margin-top: 1rem;
+  padding: 0.38rem 4.75rem;
+  font-size: 0.8em;
+  transition: 0,3s;
 }
 
-.btn-primary:hover {
-background: $light-purple !important;
-color: $dark-gray !important;
-box-shadow: none !important;
-outline: none !important;
-border-color: none !important;
+.btn-primary.go-back:hover {
+  background: $light-purple !important;
+}
+.btn-primary.search:hover {
+  background: $light-purple !important;
+  color: white !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: none !important;
 }
 

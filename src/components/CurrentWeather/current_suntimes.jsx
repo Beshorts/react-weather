@@ -1,6 +1,10 @@
 import React from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faArrowUp,faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faSun,
+         faArrowUp,
+         faArrowDown
+       }from '@fortawesome/free-solid-svg-icons';
 
 const CurrentSuntimes = (props) => {
   return(

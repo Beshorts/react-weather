@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/_index.scss';
 
-import SearchBar from './search_bar';
+import { FadeLoader } from 'react-spinners';
 
+import SearchBar from './search_bar';
 import CardContainer from '../elements/card_container';
 import CurrentWeatherWrapper from './CurrentWeather/current_weather_wrapper';
 import HomePage from '../elements/home_page';
@@ -11,9 +12,36 @@ import ErrorMessage from './error_message';
 // import fontawesome library
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faSearch, faCloud, faBolt, faCloudRain, faCloudShowersHeavy, faSnowflake, faSun, faSmog, faThermometerQuarter, faThermometerThreeQuarters, faTint, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faSearch,
+         faCloud,
+         faBolt,
+         faCloudRain,
+         faCloudShowersHeavy,
+         faSnowflake,
+         faSun,
+         faSmog,
+         faThermometerQuarter,
+         faThermometerThreeQuarters,
+         faTint,
+         faArrowUp,
+         faArrowDown
+        }from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faSearch, faCloud, faBolt, faCloudRain, faCloudShowersHeavy, faSnowflake, faSun, faSmog, faThermometerQuarter, faThermometerThreeQuarters, faTint, faArrowUp, faArrowDown)
+library.add(fab,
+            faSearch,
+            faCloud,
+            faBolt,
+            faCloudRain,
+            faCloudShowersHeavy,
+            faSnowflake,
+            faSun,
+            faSmog,
+            faThermometerQuarter,
+            faThermometerThreeQuarters,
+            faTint,
+            faArrowUp,
+            faArrowDown
+          )
 
 
 class App extends Component {
@@ -132,6 +160,15 @@ class App extends Component {
       let container = null;
     if (this.state.currentWeather === null) {
       container = <HomePage />;
+    } else if  (this.state.loading) {
+      container = <div className="spinner"
+                       style={{
+                         display: "flex",
+                         justifyContent: "center",
+                         alignItems: "center",
+                       }}>
+                       <FadeLoader color="white" />
+                  </div>;
     } else if (this.state.error) {
       container = <ErrorMessage  onClickHandler={this.goBackHandler} />;
     } else if (this.currentWeather !== null) {

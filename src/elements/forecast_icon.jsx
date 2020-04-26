@@ -1,7 +1,15 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloud, faBolt, faCloudRain, faCloudShowersHeavy, faSnowflake, faSun, faSmog } from '@fortawesome/free-solid-svg-icons'
+import { faCloud,
+         faBolt,
+         faCloudRain,
+         faCloudShowersHeavy,
+         faSnowflake,
+         faSun,
+         faSmog
+       }from '@fortawesome/free-solid-svg-icons'
+
 
 const ForecastIcon = ( {dayIcon} ) => {
 
@@ -29,7 +37,7 @@ const ForecastIcon = ( {dayIcon} ) => {
 
   return(
     <div className="forecast-icon">
-    {thisIcon}
+      {thisIcon}
     </div>
   )
 }

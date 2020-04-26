@@ -9,9 +9,9 @@ const CurrentTempWrapper = (props) => {
       newIcon={props.icon}
       />
       <div className="temp-text-wrapper">
-      <h3 className="text-temp-info">now</h3>
-      <h3 className="current-temp">{props.temperature}°</h3>
-    </div>
+        <h3 className="text-temp-info">now</h3>
+        <h3 className="current-temp">{props.temperature}°</h3>
+      </div>
     </div>
   );
 }

@@ -5,41 +5,61 @@
   align-items: center;
   .sun-time {
     align-self:center;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
+    // @mixin media queries
+    @include for-tablet {
+      font-size: 1.5em;
+    }
   }
   .sun-icon {
     color: $orange;
     display: inline-flex;
     align-items: center;
     .fa-sun {
-      padding-right: 2px;
+      padding-right: 0.125rem;
+
+      @include for-tablet {
+        font-size: 1.35em;
+      }
     }
     .fa-arrow-up {
-      font-size: 10.5px;
+      font-size: 0.656em;
       color: $text-main;
       opacity: 0.6;
+
+      @include for-tablet {
+        font-size: 0.88em;
+      }
     }
     .fa-arrow-down {
-      font-size: 10px;
+      font-size: 0.625em;
       color: $text-main;
       opacity: 0.6;
+
+      @include for-tablet {
+        font-size: 0.9em;
+      }
     }
     .sun-text {
-      font-size: 10px;
+      font-size: 0.625em;
       font-weight: 500;
       opacity: 0.4;
-      padding-left: 4px;
+      padding-left: 0.25rem;
+
+      @include for-tablet {
+        font-size: 0.9em;
+      }
     }
   } // end sun-icon
   .sun-details-a {
     justify-self: end;
-    padding-right: 14px;
+    padding-right: 0.875rem;
     border-right-style: solid;
     border-right-color: $text-main;
   }
   .sun-details-b {
     justify-self: start;
-    padding-left: 14px;
+    padding-left: 0.875rem;
   }
 } // end sun-times

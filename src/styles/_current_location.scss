@@ -1,14 +1,27 @@
 
 .city-country-name {
-  font-size: 24px;
-  margin-bottom: 5px;
+  font-size: 1.5em;
+  margin-bottom: 0.3125rem;
+  // @mixin media queries
+  @include for-tablet {
+    font-size: 2em;
+  }
 }
 .current-date {
   font-weight: 900;
-  font-size: 16px;
+  font-size: 1em;
+
+  @include for-tablet {
+    font-size: 1.5em;
+    line-height: 0.8;
+  }
 }
 .weather-description {
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 600;
   opacity: 0.6;
+
+  @include for-tablet {
+    font-size: 1em;
+  }
 }
