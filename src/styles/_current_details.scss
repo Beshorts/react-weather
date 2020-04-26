@@ -1,35 +1,68 @@
 .current-details-info {
     display: grid;
     grid-template-columns: 5.375rem;
-    grid-row-gap: 18px;
+    grid-row-gap: 1.125rem;
+
+    // @mixin media queries
+    @include for-tablet {
+      grid-template-columns: 6.375rem;
+    }
+    @include for-laptop {
+      grid-row-gap: 2.125rem;
+    }
+
   .value-and-icon {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     svg {
-      font-size: 20px;
+      font-size: 1.25em;
       color: $small-icon;
+
+      @include for-tablet {
+        font-size: 1.75em;
+      }
     }
+
     .fa-tint {
-      font-size: 18px;
+      font-size: 1.125em;
+
+      @include for-tablet {
+        font-size: 1.625em;
+      }
     }
     .fa-cloud {
-      font-size: 16px;
+      font-size: 1em;
+
+      @include for-tablet {
+        font-size: 1.5em;
+      }
     }
     .fa-wind {
-      font-size: 16px;
+      font-size: 1em;
+
+      @include for-tablet {
+        font-size: 1.5em;
+      }
     }
     .value-elem {
-      font-size: 16px;
+      font-size: 1em;
       font-weight: 500;
+
+      @include for-tablet {
+        font-size: 1.35em;
+      }
     }
   } // end temp-min-icon
 
   p {
-    font-size: 12px;
+    font-size: 0.750em;
     font-weight: 600;
     opacity: 0.4;
-  }
 
+    @include for-tablet {
+      font-size: 1em;
+    }
+  }
 } // end current-details-info

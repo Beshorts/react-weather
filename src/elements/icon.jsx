@@ -1,7 +1,14 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCloud, faBolt, faCloudRain, faCloudShowersHeavy, faSnowflake, faSun, faSmog } from '@fortawesome/free-solid-svg-icons'
+import { faCloud,
+         faBolt,
+         faCloudRain,
+         faCloudShowersHeavy,
+         faSnowflake,
+         faSun,
+         faSmog
+       }from '@fortawesome/free-solid-svg-icons'
 
 const Icon = ( {newIcon} ) => {
 
@@ -29,7 +36,7 @@ const Icon = ( {newIcon} ) => {
 
   return(
     <div className="current-icon">
-    {currentIcon}
+      {currentIcon}
     </div>
   )
 }

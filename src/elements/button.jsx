@@ -8,7 +8,7 @@ const Button = (props) => {
       type={props.type}
       onClick={props.clicked} >{props.children}
     </button>
-    )
+  )
 }
 
 export default Button;

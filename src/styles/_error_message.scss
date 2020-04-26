@@ -1,13 +1,12 @@
 .error-message {
-  margin-bottom: 56px;
-  //background-color: $light-purple;
+  margin-bottom: 3.5rem;
   border-radius: 26px;
-  margin-top: 40px;
+  margin-top: 4.5rem;
   text-align: center;
   .error-text {
     margin: 0 auto;
-    padding: 16px 16px;
-    width: 300px;
+    padding: 1rem;
+    width: 18.75rem;
     h1, h2, p {
     color: white;
     }
@@ -15,7 +14,7 @@
       font-weight: 700;
     }
     h2 {
-      font-size: 22px;
+      font-size: 1.375em;
       font-weight: 600;
     }
     p {

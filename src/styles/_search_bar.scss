@@ -1,7 +1,9 @@
 @import './_colors';
+@import './media_queries';
 
 .search-bar {
   padding-top: 2.5rem;
+  width: 100%;
   .search-bar-items {
     display: flex;
     flex-direction: row;
@@ -22,7 +24,14 @@
     border: none;
     border: 0;
     box-shadow: 1px 1px 8px  rgba(0, 0, 0, 0.2);
-  }
+    // @mixin media queries
+    @include for-tablet {
+      width: 23.3125rem;
+    }
+    @include for-laptop {
+      width: 26.875rem;
+    }
+  } // end city
   #city::placeholder {
     font-weight: 600;
     font-size: 0.875em;
@@ -41,7 +50,6 @@
   outline: none !important;
   border-color: none !important;
 }
-
 .input-field:focus {
   box-shadow: none !important;
   border-color: transparent !important;
