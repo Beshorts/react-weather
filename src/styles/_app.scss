@@ -1,0 +1,9 @@
+.app {
+  margin: 0 auto;
+  height: 100vh;
+// override default behaviours of container-fluid
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+

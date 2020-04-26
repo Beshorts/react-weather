@@ -1,0 +1,35 @@
+.current-details-info {
+    display: grid;
+    grid-template-columns: 5.375rem;
+    grid-row-gap: 18px;
+  .value-and-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      font-size: 20px;
+      color: $small-icon;
+    }
+    .fa-tint {
+      font-size: 18px;
+    }
+    .fa-cloud {
+      font-size: 16px;
+    }
+    .fa-wind {
+      font-size: 16px;
+    }
+    .value-elem {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  } // end temp-min-icon
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.4;
+  }
+
+} // end current-details-info
