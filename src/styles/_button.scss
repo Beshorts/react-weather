@@ -1,0 +1,37 @@
+.btn-action {
+  margin: 0 auto;
+  .btn-primary {
+    margin-top:0.125rem;
+    font-weight: 500;
+    font-size: 0.8em;
+    border-radius: 4px;
+    padding: 0.35rem 1.2rem;
+    border-style: none;
+    box-shadow: 1px 1px 8px  rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+}
+
+.btn-primary.search  {
+ padding: 0.38rem 1rem;
+ border-top-right-radius: 1.75rem;
+ border-bottom-right-radius: 1.75rem;
+ border-color: none !important;
+ outline: none !important;
+ box-shadow: none !important;
+}
+
+.btn-primary.go-back {
+  margin-top: 16px;
+  padding: 0.38rem 5rem;
+
+}
+
+.btn-primary:hover {
+background: $light-purple !important;
+color: $dark-gray !important;
+box-shadow: none !important;
+outline: none !important;
+border-color: none !important;
+}
+

@@ -1,0 +1,45 @@
+.sun-times {
+  text-align: center;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  .sun-time {
+    align-self:center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .sun-icon {
+    color: $orange;
+    display: inline-flex;
+    align-items: center;
+    .fa-sun {
+      padding-right: 2px;
+    }
+    .fa-arrow-up {
+      font-size: 10.5px;
+      color: $text-main;
+      opacity: 0.6;
+    }
+    .fa-arrow-down {
+      font-size: 10px;
+      color: $text-main;
+      opacity: 0.6;
+    }
+    .sun-text {
+      font-size: 10px;
+      font-weight: 500;
+      opacity: 0.4;
+      padding-left: 4px;
+    }
+  } // end sun-icon
+  .sun-details-a {
+    justify-self: end;
+    padding-right: 14px;
+    border-right-style: solid;
+    border-right-color: $text-main;
+  }
+  .sun-details-b {
+    justify-self: start;
+    padding-left: 14px;
+  }
+} // end sun-times

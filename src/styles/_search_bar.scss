@@ -1,0 +1,55 @@
+@import './_colors';
+
+.search-bar {
+  padding-top: 2.5rem;
+  .search-bar-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .search-icon {
+    align-self: center;
+    font-size: 1em;
+    margin-right: 0.3rem;
+  }
+  #city {
+    padding-left: 0.625rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 1.88rem;
+    border-top-left-radius: 1.75rem;
+    border-bottom-left-radius: 1.75rem;
+    border: none;
+    border: 0;
+    box-shadow: 1px 1px 8px  rgba(0, 0, 0, 0.2);
+  }
+  #city::placeholder {
+    font-weight: 600;
+    font-size: 0.875em;
+    color: $gray;
+    padding-left: 1.25rem;
+  }
+} // end search-bar
+
+#city:hover {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: none !important;
+}
+#city:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: none !important;
+}
+
+.input-field:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+.input-field:hover {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+}
+

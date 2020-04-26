@@ -1,0 +1,40 @@
+.current-temp-info {
+  border-radius: 4px;
+  justify-self: center;
+  padding: 0 12px;
+}
+.current-icon {
+  height: 60px;
+  .svg-inline--fa {
+   margin-top: 10px;
+   font-size: 50px;
+    color: $big-icon;
+  }
+  .fa-sun {
+    margin-top: 0;
+    font-size: 60px;
+    color: $yellow;
+  }
+  .fa-bolt {
+    color: $fabold-icon;
+  }
+  .fa-snowflake {
+    color: $light-purple;
+  }
+
+ }
+
+ .text-temp-info {
+  line-height: 0.8;
+  margin-top: 4px;
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.4;
+ }
+ .current-temp {
+  margin-left: 4px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: 500;
+ }

@@ -1,0 +1,40 @@
+.forecast-days {
+    margin-bottom: 52px;
+
+  .forecast-day {
+    margin-bottom: 16px;
+    padding: 12px 22px;
+    box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .forecast-temp-icon {
+      width: 100%;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      .day-temp {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      svg {
+        font-size: 16px;
+        color: $big-icon;
+      }
+      .fa-sun {
+        color: $yellow;
+      }
+      .fa-bolt {
+        color: $fabold-icon;
+      }
+      .fa-snowflake {
+        color: $light-purple;
+      }
+    } // end forecast-temp-icon
+    .day-name {
+      align-self: center;
+      font-size: 12px;
+      font-weight: 900;
+      opacity: 0.6;
+    }
+  } // end forecast-day
+}

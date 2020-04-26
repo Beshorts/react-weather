@@ -1,0 +1,34 @@
+// BUTTON & SEARCHBAR =>
+// primary = btn bg customize
+// btn-primary-hover: change color onClick
+// gray: for search bar placefolder text
+// dark-gray: for btn text on hover
+// TEXTS =>
+// text-main: text color for relevant infos as city name, temperatures ect
+// text-secondary: text-main with opacity 60%
+// text-tertiary: text-main with opacity 40%
+// ICONS =>
+// light-purple: for icons on body-bg color
+// yellow: for sun color
+// orange: for icons sunset-sunrise
+// big-icon: for icons on current_temp.scss
+// small-icon: for icons on white bg (icon-color same than body-bg)
+// fabold-icon-color: custom color for this icon
+
+$main-bg: #545598;
+// BUTTON & SEARCHBAR
+$primary: #FB3089;
+$btn-primary-hover: #F9B406;
+$gray: #C0BCBC;
+$dark-gray: #999191;
+// TEXTS
+$text-main: #2846A6;
+$text-secondary: rgba($text-main, .6);
+$text-tertiary: rgba($text-main, .4);
+// ICONS
+$light-purple: #C0B4FE;
+$yellow: #F9D206;
+$orange: #F9B406;
+$big-icon: #8db4e2;
+$small-icon: #545598;
+$fabold-icon: #93278f;
