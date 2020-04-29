@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const SearchBar = (props) => {
     return(
-      <div className="search-bar d-flex justify-content-center container ">
+      <div className="search-bar d-flex justify-content-center align-items-center container ">
         <div className=" search-bar-items">
           <InputField
             type="text"

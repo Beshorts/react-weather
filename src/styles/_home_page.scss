@@ -2,29 +2,20 @@
   margin-top: 3.75rem;
   text-align: center;
   svg {
-  height: 20rem;
-  width: 20rem;
-  // @mixin media queries
-  @include for-tablet {
-    height: 27rem;
-    width: 24rem;
-  }
-  @include for-laptop {
-     height: 28rem;
-     width: 28rem;
-  }
-  @include for-laptop-l {
-     height: 36rem;
-     width: 33rem;
-  }
-} // end landing-page
-  .footer-text {
-    margin-top: 3.75rem;
-    padding: 0 1rem;
-     p {
-     color: white;
-     font-size: 0.625em;
-     opacity: 0.6;
+    height: 20rem;
+    width: 20rem;
+    // @mixin media queries
+    @include for-tablet {
+      height: 27rem;
+      width: 24rem;
     }
-  }
+    @include for-laptop {
+       height: 28rem;
+       width: 28rem;
+    }
+    @include for-laptop-l {
+       height: 36rem;
+       width: 33rem;
+    }
+  } // end svg
 }

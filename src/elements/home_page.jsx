@@ -6,9 +6,6 @@ const HomePage = (props) => {
   return(
     <div className="landing-page ">
       <LandingPage />
-      <div className="footer-text">
-        <p>Weather React App - Openweathermap API - Vector designed by pch.vector/Freepik - modified by me.</p>
-      </div>
     </div>
   );
 }
