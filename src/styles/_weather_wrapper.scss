@@ -5,7 +5,7 @@
   margin: 0 auto;
   margin-bottom: 3.5rem;
   background-color: white;
-  border-radius: 26px;
+  border-radius: 4px;
   margin-top: 2.5rem;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -16,7 +16,7 @@
   "footer footer";
   // @mixin media queries
    @include for-tablet {
-     grid-row-gap: 42px;
+     grid-row-gap: 2.6875rem;
    }
   .current-header-info {
     grid-area: header;
