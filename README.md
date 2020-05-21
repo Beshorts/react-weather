@@ -1,13 +1,27 @@
+## REACT WEATHER APP
+Mobile responsive app that allows users to get current and forecast weather information by city search.
+
+React.js - Built with [Open Weather API](https://openweathermap.org/api) - SVG files  Designed by pch.vector / [Freepik](https://www.freepik.coms)
+
+## Live Application URL
+Deployed on Heroku
+
+[ https://b-react-weather.herokuapp.com/]( https://b-react-weather.herokuapp.com/)
+
+##
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Cloning and Running the Application in local
+Clone the project into local
 
-In the project directory, you can run:
+Install yarn packages. Go into the project folder and type the following command to install yarn dependencies
+### `yarn install`
+run the application
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The application runs on [http://localhost:5000](http://localhost:5000) 
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
