@@ -1,4 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
+
+import PropTypes from 'prop-types';
+
+import { CityContext } from '../../contexts/cityContext';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun,
@@ -6,11 +10,14 @@ import { faSun,
          faArrowDown
        }from '@fortawesome/free-solid-svg-icons';
 
-const CurrentSuntimes = (props) => {
+const CurrentSuntimes = () => {
+
+  const { sunrise, sunset } = useContext(CityContext);
+
   return(
     <div className="sun-times">
       <div className="sun-details-a">
-        <h3 className="sun-time">{props.sunrise}am
+        <h3 className="sun-time">{sunrise} am
         </h3>
         <div className="sun-icon">
           <FontAwesomeIcon icon={faSun} />
@@ -20,7 +27,7 @@ const CurrentSuntimes = (props) => {
         </div>
       </div>
       <div className="sun-details-b">
-        <h3 className="sun-time">{props.sunset}pm
+        <h3 className="sun-time">{sunset} pm
         </h3>
         <div className="sun-icon">
           <FontAwesomeIcon icon={faSun} />
@@ -34,3 +41,12 @@ const CurrentSuntimes = (props) => {
 }
 
 export default CurrentSuntimes;
+
+CurrentSuntimes.defaultProps = {
+  sunset: "",
+  sunrise: "",
+}
+CurrentSuntimes.propTypes = {
+  sunset: PropTypes.string.isRequired,
+  sunrise: PropTypes.string.isRequired,
+}

@@ -1,7 +1,9 @@
 .landing-page {
-  margin-top: 3.75rem;
-  text-align: center;
+  display: grid;
+  align-items: center;
+  height: 80vh;
   svg {
+   place-self: center;
     height: 20rem;
     width: 20rem;
     // @mixin media queries

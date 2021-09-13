@@ -9,34 +9,46 @@
     flex-direction: row;
     align-content: space-between;
     align-items: center;
+    background-color: white;
+    border-radius: 8px;
+
   }
+
+  .form-inline {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 12px;
+  }
+
   .search-icon {
     font-size: 1em;
+    color: $text-main;
+    margin-right: 1rem;
   }
   #city {
     padding-left: 0.625rem;
     padding-top: 0;
     padding-bottom: 0;
     height: 1.88rem;
-    border-radius: 0.25rem;
+    width: 15rem;
     border: none;
     border: 0;
-    box-shadow: 1px 1px 8px  rgba(0, 0, 0, 0.2);
+    background: white;
     // @mixin media queries
     @include for-tablet {
       height: 1.95rem;
-      width: 23.3125rem;
+      width: 14.3125rem;
     }
     @include for-laptop {
       height: 2.1rem;
-      width: 26.875rem;
+      width: 17.875rem;
     }
   } // end city
   #city::placeholder {
     font-weight: 600;
     font-size: 0.875em;
     color: $gray;
-    padding-left: 1.25rem;
+    padding-left: 0.25rem;
   }
 } // end search-bar
 

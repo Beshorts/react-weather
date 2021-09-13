@@ -1,7 +1,6 @@
 // import scss of each component
 @import './_app';
 @import './_search_bar';
-@import './_button';
 @import './_search_bar';
 @import './home_page';
 @import './_weather_wrapper';
@@ -20,6 +19,13 @@ $body-bg: $main-bg;
 @import '~bootstrap/scss/bootstrap.scss';
 
 /* set custom behaviours */
+
+// hide browser's scrollBar
+html {
+  ::-webkit-scrollbar {
+    display: none;
+}
+}
 body {
   margin: 0;
   padding: 0;

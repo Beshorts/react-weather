@@ -4,7 +4,7 @@
   margin-bottom: 0.3125rem;
   // @mixin media queries
   @include for-tablet {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 }
 .current-date {
@@ -12,14 +12,14 @@
   font-size: 1em;
 
   @include for-tablet {
-    font-size: 1.5em;
+    font-size: 1.1em;
     line-height: 0.8;
   }
 }
 .weather-description {
-  font-size: 0.75em;
-  font-weight: 600;
-  opacity: 0.6;
+  font-size: 0.9em;
+  font-weight: 800;
+  color: $text-tertiary;
 
   @include for-tablet {
     font-size: 1em;

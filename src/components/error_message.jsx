@@ -1,8 +1,10 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import Button from '../elements/button';
 
-const ErrorMessage = (props) => {
+const ErrorMessage = ({onClickHandler}) => {
   return(
     <div className="error-message">
       <div className="error-text">
@@ -12,7 +14,9 @@ const ErrorMessage = (props) => {
            <Button
               theme="primary go-back"
               type="submit"
-              clicked={props.onClickHandler}>please try again
+              clicked={onClickHandler}
+            >
+              try again
            </Button>
          </div>
       </div>
@@ -21,3 +25,8 @@ const ErrorMessage = (props) => {
 }
 
 export default ErrorMessage;
+
+
+ErrorMessage.propTypes = {
+  onClickHandler: PropTypes.func.isRequired,
+}

@@ -1,11 +1,14 @@
 import React from 'react';
 
-const CardContainer = (props) => {
+import PropTypes from 'prop-types';
+
+const CardContainer = ({children}) => {
+  
   return(
    <div className="card-weather container">
      <div className="card-weather row " >
-       <div className="board pr-0 pl-0 col-sm-3 col-md-12 col-lg-12 col-xl-12">
-         {props.children}
+       <div className="board pr-0 pl-0 col-12">
+         {children}
        </div>
      </div>
    </div>
@@ -13,3 +16,7 @@ const CardContainer = (props) => {
 }
 
 export default CardContainer;
+
+CardContainer.propTypes = {
+  children: PropTypes.object.isRequired,
+}

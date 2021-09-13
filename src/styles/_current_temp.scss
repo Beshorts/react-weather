@@ -1,35 +1,23 @@
 .current-temp-info {
   border-radius: 4px;
-  justify-self: center;
-  padding: 0 0.75rem;
-  // @mixin media queries
-  @include for-mobile-l {
-    padding-left: 0.75rem;
-    padding-right: 0;
-  }
-  @include for-tablet {
-    justify-self: end;
-    padding: 0;
-  }
+  justify-self: end;
 }// end current-temp-info
 .current-icon {
-  height: 3.75rem;
   .svg-inline--fa {
-    margin-top: 0.625rem;
-    font-size: 3.125em;
+    font-size: 2.125em;
     color: $big-icon;
 
     @include for-tablet {
-      font-size: 4em;
+      font-size: 3em;
     }
   }
   .fa-sun {
     margin-top: 0;
-    font-size: 3.750em;
+    font-size: 2.750em;
     color: $yellow;
 
     @include for-tablet {
-      font-size: 4.625em;
+      font-size: 3.625em;
     }
   }
   .fa-bolt {
@@ -42,14 +30,13 @@
 
 .text-temp-info {
   line-height: 0.8;
-  margin-top: 0.25rem;
   margin-left: 0.25rem;
   font-size: 0.75em;
   font-weight: 600;
-  opacity: 0.4;
+  color: $text-secondary;
 
   @include for-tablet {
-   margin-top: 1rem;
+   margin-top: 0.4rem;
    line-height: 0.8;
    font-size: 1em;
   }
