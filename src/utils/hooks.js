@@ -16,7 +16,6 @@ export const useFetchWeather = (value) => {
 
 
     const fetchApi = () => {
-      console.log("fetch API")
       setLoading(true)
       // start to fetch if value is passed to searchBarInput
       Promise.all([fetch(weather), fetch(forecast)])

@@ -54,7 +54,6 @@ library.add(fab,
 
 
 const App = () => {
-  console.log('app')
     // initial state of searchBar input
     const [searchBarInput, setSearchBarInput] = useState('');
     // fetch Api using custom hook and destructuring it
@@ -77,7 +76,6 @@ const App = () => {
 
     // Reset weather info and update state on click btn on page error
    const  goBackHandler = () => {
-    console.log("seacrBarHandler")
       setSearchBarInput('');
     }
 
