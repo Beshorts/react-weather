@@ -1,12 +1,10 @@
 .error-message {
-  margin-bottom: 3.5rem;
-  border-radius: 26px;
-  margin-top: 4.5rem;
+  display: grid;
+  align-items: center;
   text-align: center;
+  height: 50vh;
   .error-text {
-    margin: 0 auto;
-    padding: 1rem;
-    width: 18.75rem;
+    place-self: center;
     h1, h2, p {
     color: white;
     }
@@ -15,11 +13,22 @@
     }
     h2 {
       font-size: 1.375em;
-      font-weight: 600;
+      font-weight: 400;
     }
     p {
       font-weight: 500;
       opacity: 0.6;
     }
+  }
+  .btn-action .go-back{
+    margin-top: 1rem;
+    padding: 3px 28px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .btn-action .go-back:focus{
+    box-shadow: none;
+    background-color: #625a71;
+
   }
 }

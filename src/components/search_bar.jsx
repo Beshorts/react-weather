@@ -1,40 +1,49 @@
 import React from 'react';
+
+import PropTypes from 'prop-types';
+
 import InputField from '../elements/input_field';
-import Button from '../elements/button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-
-const SearchBar = (props) => {
+const SearchBar = ({value, onChange, onKeyDown}) => {
+  
     return(
       <div className="search-bar d-flex justify-content-center align-items-center container ">
         <div className=" search-bar-items">
-          <InputField
-            type="text"
-            name="city"
-            placeholder="enter a city"
-            value={props.value}
-            handleChange={props.onChangeHandler}
-            error={props.error}
-          />
-          <div className="btn-action">
-            <Button
-              theme="primary search"
-              type="submit"
-              clicked={props.onClickHandler}>
-              <FontAwesomeIcon className="search-icon" icon="search"/>
-            </Button>
-          </div>
+
+<form className="form-inline ">
+
+    <FontAwesomeIcon className="search-icon" icon="search"/>
+      <InputField
+        className="form-control "
+        type="text"
+        name="city"
+        placeholder='search for a city '
+        aria-label="Search"
+        value={value}
+        handleChange={onChange}
+        onKeyDown={onKeyDown}
+      />
+    </form>
         </div>
       </div>
     )
   }
 
-export default SearchBar;
+export default React.memo(SearchBar);
 
+SearchBar.defaultProps = {
+  value: '',
+  onChange: () => {},
+  onKeyDown: () => {},
+}
 
-
+SearchBar.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  onKeyDown: PropTypes.func.isRequired,
+}
 
 
 

@@ -1,3 +1,9 @@
+
 .spinner {
-  margin-top: 5rem;
+ display: grid;
+ align-items: center;
+  height: 50vh;
+  .spinner-icon {
+    place-self: center;
+  }
 }

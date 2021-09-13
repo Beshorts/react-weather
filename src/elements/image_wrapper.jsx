@@ -1,4 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
+
+import PropTypes from 'prop-types';
+
+import { CityContext } from '../contexts/cityContext';
 
 import { ReactComponent as WAutumn } from '../svg/w_autumn.svg';
 import { ReactComponent as WSpring } from '../svg/w_spring.svg';
@@ -8,12 +12,10 @@ import { ReactComponent as WStorm } from '../svg/w_storm.svg';
 import { ReactComponent as WRain } from '../svg/w_rain.svg';
 import { ReactComponent as HomePage } from '../svg/home.svg';
 
-const ImageWrapper = ({currentImage}) => {
+const ImageWrapper = () => {
 
-  const {
-    main,
-    temperature
-   } = currentImage;
+   const {main, temperature} = useContext(CityContext);
+ 
 
   let imageComponent = null;
 
@@ -46,3 +48,13 @@ const ImageWrapper = ({currentImage}) => {
 
 
 export default ImageWrapper;
+
+ImageWrapper.defaultProps = {
+  main: '',
+  temperature: 0,
+} 
+
+ImageWrapper.propTypes = {
+  main: PropTypes.string.isRequired,
+  temperature: PropTypes.number.isRequired,
+}

@@ -68,8 +68,8 @@
     .day-name {
       align-self: center;
       font-size: 0.75em;
-      font-weight: 900;
-      opacity: 0.6;
+      font-weight: 800;
+      color: $text-tertiary;
 
       @include for-tablet {
         font-size: 1em;

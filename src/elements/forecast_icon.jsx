@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types';
+
+import { CityContext } from '../contexts/cityContext';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { faCloud,
          faBolt,
          faCloudRain,
@@ -8,14 +13,14 @@ import { faCloud,
          faSnowflake,
          faSun,
          faSmog
-       }from '@fortawesome/free-solid-svg-icons'
+       }from '@fortawesome/free-solid-svg-icons';
 
 
-const ForecastIcon = ( {dayIcon} ) => {
+const ForecastIcon = () => {
 
   const {
     mainDay1, mainDay2, mainDay3, mainDay4,
-  } = dayIcon;
+  } = useContext(CityContext);
 
   let thisIcon = null;
 
@@ -44,3 +49,16 @@ const ForecastIcon = ( {dayIcon} ) => {
 
 
 export default ForecastIcon;
+
+ForecastIcon.defaultProps = {
+  mainDay1: '',
+  mainDay2: '',
+  mainDay3: '',
+  mainDay4: '',
+}
+ForecastIcon.propTypes = {
+  mainDay1: PropTypes.string.isRequired,
+  mainDay2: PropTypes.string.isRequired,
+  mainDay3: PropTypes.string.isRequired,
+  mainDay4: PropTypes.string.isRequired,
+}

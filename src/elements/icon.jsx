@@ -1,4 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
+
+import PropTypes from 'prop-types';
+
+import { CityContext } from '../contexts/cityContext';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloud,
@@ -10,11 +14,10 @@ import { faCloud,
          faSmog
        }from '@fortawesome/free-solid-svg-icons'
 
-const Icon = ( {newIcon} ) => {
+const Icon = () => {
 
-  const {
-    main,
-  } = newIcon;
+  const { main } = useContext(CityContext)
+  
 
   let currentIcon = null;
 
@@ -43,3 +46,11 @@ const Icon = ( {newIcon} ) => {
 
 
 export default Icon;
+
+Icon.defaultProps = {
+  main: '',
+}
+
+Icon.propTypes = {
+  main: PropTypes.string.isRequired,
+}

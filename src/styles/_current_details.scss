@@ -1,11 +1,10 @@
 .current-details-info {
     display: grid;
-    grid-template-columns: 5.375rem;
-    grid-row-gap: 1.125rem;
+    grid-template-columns: 5.7rem;
 
     // @mixin media queries
     @include for-tablet {
-      grid-template-columns: 6.375rem;
+      grid-template-columns: 8rem;
     }
     @include for-laptop {
       grid-row-gap: 2.125rem;
@@ -16,12 +15,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0.3rem;
     svg {
-      font-size: 1.25em;
       color: $small-icon;
 
       @include for-tablet {
-        font-size: 1.75em;
+        font-size: 1.45em;
       }
     }
 
@@ -47,7 +46,7 @@
       }
     }
     .value-elem {
-      font-size: 1em;
+      font-size: 0.9em;
       font-weight: 500;
 
       @include for-tablet {
@@ -58,11 +57,11 @@
 
   p {
     font-size: 0.750em;
-    font-weight: 600;
-    opacity: 0.4;
+    font-weight: 800;
+    color: $text-tertiary;
 
     @include for-tablet {
-      font-size: 1em;
+      font-size: 0.9em;
     }
   }
 } // end current-details-info
