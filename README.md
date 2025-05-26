@@ -3,13 +3,6 @@ Mobile responsive app that allows users to get current and forecast weather info
 
 React.js - Built with [Open Weather API](https://openweathermap.org/api) - SVG files  Designed by pch.vector / [Freepik](https://www.freepik.coms)
 
-## Live Application URL
-Deployed on Heroku
-
-[ https://b-react-weather.herokuapp.com/]( https://b-react-weather.herokuapp.com/)
-
-##
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Cloning and Running the Application in local
